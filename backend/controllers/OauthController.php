@@ -18,7 +18,7 @@ class OauthController extends Controller
     {
         $params = Yii::$app->request->getQueryParams();
         $params = json_encode($params);
-        file_put_contents("/tmp/ypf.txt",$params."\r\n",FILE_APPEND);
+        //file_put_contents("/tmp/ypf.txt",$params."\r\n",FILE_APPEND);
         var_dump($params);
     }
 }
